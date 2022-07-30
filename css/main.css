@@ -1,0 +1,136 @@
+/* Start Global Roules */
+body 
+{
+    font-family: 'Saira', sans-serif;
+    line-height: 1.7;
+    color: var(--color-text) !important;
+}
+:root
+{
+    --bg-color : #021026 ;
+    --bg-content : #051a33 ;
+    --color-text : #287bb1 ;
+}
+.color-body {
+    color: var(--color-text);
+}
+.spinner {
+    width: 80px;
+    height: 80px;
+  
+    position: relative;
+    margin: 100px auto;
+  }
+  
+  .double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
+ #loading 
+ {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    color: #fff;
+    z-index: 99999;
+ } 
+/* End Global Roules */
+/* Start Section Header */
+
+header 
+{
+    background-color: var(--bg-color);
+    height: 100%;
+    width: 100%;
+    padding: 50px 0;
+}
+header .nav-item 
+{
+    margin: 15px 0;
+}
+header .temp-card , .owl-carousel
+{
+    background-color: var(--bg-content);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 3px 4px 5px #FFF;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin-top: 30px;
+}
+.form-control
+{
+    background-color: var(--bg-content) ;
+    border: none;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+.form-control:focus {
+    color: #fff;
+    background-color: var(--bg-content) ;
+    border-color: none;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+header .title 
+{
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+header #todayDegree 
+{
+    font-size: 80px;
+    font-weight: normal;
+}
+/* End Seaction Header */
+/* Start Seaction Footer */
+footer {
+    background-color: steelblue;
+    text-align: center;
+    color: #FFF;
+    padding: 10px 0;
+} 
+/* End Footer */
